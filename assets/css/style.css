@@ -3,13 +3,33 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    animation: colorChange 0.1s steps(6) infinite;
+}
+
+.header-container {
+    text-align: center;
+    margin-top: 20px;
 }
 
 h3 {
     color: #333;
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+a.btn-new {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+a.btn-new:hover {
+    background-color: #0056b3;
 }
 
 ul {
@@ -24,6 +44,7 @@ li {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 600px;
+    animation: colorChange 0.1s steps(6) infinite reverse;
 }
 
 li strong {
@@ -108,7 +129,6 @@ footer p {
     font-size: 0.9em;
 }
 
-
 form {
     max-width: 600px;
     margin: 50px auto;
@@ -139,14 +159,4 @@ form input[type="text"] {
 
 form textarea {
     background-color: #fff3e0;
-}
-
-li {
-    background-color: #f9f9f9;
-    margin: 10px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-   max-width: 600px;
-   animation: colorChange 0.1s steps(6) infinite reverse;
 }
