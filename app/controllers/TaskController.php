@@ -19,7 +19,7 @@ class TaskController extends Controller {
             $task->save();
 
             // Redirigir a la lista de tareas después de guardar
-            header("Location: /task/index");
+            header("Location: /taskmvc/task/list");
             exit();
         } else {
             $this->view("new_task");
@@ -35,7 +35,7 @@ class TaskController extends Controller {
             $task->save();
 
             // Redirigir a la lista de tareas después de guardar
-            header("Location: /task/index");
+            header("Location: /taskmvc/task/list");
             exit();
         } else {
             $task = Task::find($params[0]);
@@ -49,7 +49,7 @@ class TaskController extends Controller {
         if ($task) {
             $task->delete();
             // Redirigir a la lista de tareas después de eliminar
-            header("Location: /taskmvc/task/");
+            header("Location: /taskmvc/task/list");
             exit();
         } else {
             echo "Tarea no encontrada";

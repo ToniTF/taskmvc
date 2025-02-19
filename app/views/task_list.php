@@ -11,12 +11,9 @@
         <?php foreach ($data as $task): ?>
             <li>
                 <strong><?php echo $task->title; ?></strong>: <?php echo $task->description; ?>
-                <form action="/task/edit/<?php echo $task->id; ?>" method="post" style="display:inline;">
-                    <button type="submit">Editar</button>
-                </form>
-                <form action="/task/delete/<?php echo $task->id; ?>" method="post" style="display:inline;" onsubmit="return confirm('¿Estás seguro de que deseas eliminar esta tarea?');">
-                    <button type="submit">Eliminar</button>
-                </form>
+                <a href="edit/<?=$task->task_id?>">Editar</a>
+                <a href="delete/<?=$task->task_id?>" onclick="return confirm('¿Estás seguro de que deseas eliminar esta tarea?');">Eliminar</a>
+            
             </li>
         <?php endforeach; ?>
     </ul>
