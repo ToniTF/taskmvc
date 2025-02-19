@@ -133,6 +133,14 @@ form input[type="text"]:focus, form input[type="password"]:focus, form textarea:
     outline: none;
 }
 
+form input[type="text"] {
+    background-color: #e0f7fa;
+}
+
+form textarea {
+    background-color: #fff3e0;
+}
+
 li {
     background-color: #f9f9f9;
     margin: 10px auto;

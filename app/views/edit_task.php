@@ -11,6 +11,7 @@
     <form action="" method="post">
         <input type="text" name="title" value="<?php echo $data->title; ?>" placeholder="Nombre de la tarea" required>
         <textarea name="description" placeholder="Descripción de la tarea" required><?php echo $data->description; ?></textarea>
+        <input type="date" name="creation_date" value="<?php echo $data->creation_date; ?>" placeholder="Fecha" required>
         <input type="submit" value="Guardar">
     </form>
 </body>
