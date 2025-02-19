@@ -14,7 +14,7 @@
                 <strong><?php echo $task->title; ?></strong>: <?php echo $task->description; ?>
                 <a href="edit/<?=$task->task_id?>">Editar</a>
                 <a href="delete/<?=$task->task_id?>" onclick="return confirm('¿Estás seguro de que deseas eliminar esta tarea?');">Eliminar</a>
-            
+                <a href="new/<?=$task->task_id?>">Nueva</a>
             </li>
         <?php endforeach; ?>
     </ul>
